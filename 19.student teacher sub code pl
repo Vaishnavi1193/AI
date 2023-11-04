@@ -3,3 +3,14 @@ takes(jane_doe, cs245).
 takes(ajit_chandra, art302).
 takes(ajit_chandra, cs254).
 classmates(X, Y) :- takes(X, Z), takes(Y, Z).
+OUTPUT:
+?- takes(A,B).
+A = jane_doe,
+B = his201 ;
+A = jane_doe,
+B = cs245 ;
+A = ajit_chandra,
+B = art302 ;
+A = ajit_chandra,
+B = cs254
+
