@@ -27,6 +27,8 @@ def minimax (curDepth, nodeIndex,
 scores = [3, 5, 2, 9, 12, 5, 23, 23]
 
 treeDepth = math.log(len(scores), 2)
+OUTPUT:
+The optimal value is :12
 
 print("The optimal value is : ", end = "")
 print(minimax(0, 0, True, scores, treeDepth))
