@@ -1,8 +1,12 @@
-takes(jane_doe, his201).
-takes(jane_doe, cs245).
-takes(ajit_chandra, art302).
-takes(ajit_chandra, cs254).
-classmates(X, Y) :- takes(X, Z), takes(Y, Z).
+orbits(mercury, sun).
+orbits(venus,   sun).
+orbits(earth,   sun).
+orbits(mars,    sun).
+orbits(moon, earth).
+orbits(phobos, mars).
+orbits(deimos, mars).
+planet(P) :- orbits(P,sun).
+satellite(S) :- orbits(S,P), planet(P).
 OUTPUT:
 ?- orbits(X,Y).
 X = mercury,
